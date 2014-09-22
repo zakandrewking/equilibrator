@@ -18,6 +18,7 @@ Setup
 To get started:
 
 ```
+mysql.server start
 ./sqlload.sh
 python manage.py runserver 8080
 ```

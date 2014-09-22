@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- Coding: utf-8 -*-
 
 import logging
 import numpy
@@ -696,6 +696,7 @@ class Reaction(object):
                          'query': query,
                          'alberty_link': self.GetNewPriorityLink(99),
                          'cc_link': self.GetNewPriorityLink(1)}
+        print 'Query: ' + query
         if not self._is_formation_reaction:
             try:
                 template_data.update({
@@ -753,7 +754,7 @@ class Reaction(object):
             else:
                 rdict[s].append('%g %s' % (c, c_w_coeff.GetName()))
                 
-        return '%s = %s' % (' + '.join(rdict[-1]), ' + '.join(rdict[1]))
+        return '%s = %s' % (' + '.join(map(str, rdict[-1])), ' + '.join(map(str, rdict[1])))
     
     def IsReactantFormulaMissing(self):
         for compound_w_coeff in self.reactants:
