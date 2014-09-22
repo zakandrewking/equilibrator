@@ -40,3 +40,7 @@ nosetests.xml
 
 # backup files
 *~
+
+TAGS
+env
+.#*
