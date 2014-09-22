@@ -12,3 +12,12 @@ Dependencies:
 - NumPy and SciPy
 - (optional) Indigo Toolkit (https://github.com/ggasoftware/indigo)
 
+Setup
+=====
+
+To get started:
+
+```
+./sqlload.sh
+python manage.py runserver 8080
+```
