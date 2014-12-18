@@ -43,4 +43,5 @@ nosetests.xml
 
 TAGS
 env
-.#*
+.#
+*.DS_Store
