@@ -23,9 +23,9 @@ DATABASES = {
         # Or path to database file if using sqlite3.
         'NAME': 'equilibrator',
         # Not used with sqlite3.
-        'USER': 'zaking',
+        'USER': 'equilibrator',
         # Not used with sqlite3.
-        'PASSWORD': '',
+        'PASSWORD': 'password',
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }

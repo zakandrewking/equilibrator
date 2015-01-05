@@ -19,6 +19,14 @@ To get started:
 
 ```
 mysql.server start
+mysql -u root -p
+> GRANT ALL ON equilibrator.* TO 'equilibrator'@'localhost' IDENTIFIED BY 'password';
+> CREATE DATABASE equilibrator;
+```
+
+Edit settings.py
+
+```
 ./sqlload.sh
 python manage.py runserver 8080
 ```
